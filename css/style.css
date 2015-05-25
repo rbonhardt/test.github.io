@@ -1,8 +1,7 @@
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
+	font-family: 'courier new', courier, sans-serif;
 	font-weight: 500;
+	color: #555;
 }
 
 h1 {
@@ -14,9 +13,16 @@ h2 {
 	line-height: 1.2;
 }
 p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
+	margin-bottom: 20px;
 }
+
+a {
+  text-decoration: none;
+  color: #2ec371;
+}
+
 blockquote {
 	font-size: 21px;
 	font-weight: 400;
@@ -28,11 +34,21 @@ pre {
 	line-height: 18.5714302062988px;
 }
 
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* Top Section Styling */
+
 #top {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   background-color: #cbd0d2;
   padding-top: 100px;
   padding-bottom: 100px;
+  background: url('../images/hero-bg-dark.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 #top h1 {
@@ -42,5 +58,25 @@ pre {
 
 #top h2 {
 	color: #cecece;
+	font-weight: 200;
 }
 
+/* Middle Section */
+
+#ryan-image{
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* Universal */
+
+.container {
+	width: 970px;
+	margin: 0 auto;
+}
+
+.skinny {
+	font-weight: 100;
+	color: #fefefe;
+}

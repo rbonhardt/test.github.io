@@ -69,6 +69,26 @@ section {
   margin-bottom: 20px;
 }
 
+/* Bottom Section */
+
+#bottom {
+	background-color: #ccc;
+}
+
+#bottom h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.one-half {
+	background-color: #fefefe;
+  /* border: 1px solid #ccc; */
+  width: 50%;
+  float: left;
+}
+
 /* Universal */
 
 .container {
@@ -79,4 +99,17 @@ section {
 .skinny {
 	font-weight: 100;
 	color: #fefefe;
+}
+
+/* clearfix */
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+} 
+.row:after {
+    clear: both;
+}
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }

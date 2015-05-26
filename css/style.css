@@ -51,6 +51,16 @@ section {
 
 /* Navbar */
 
+header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+}
+
 #header-title {
 	float: left;
 	padding-top: 15px;
@@ -99,13 +109,15 @@ section {
 #top fieldset {
 	width: 400px;
   margin: 20px auto;
+  position: relative;
+  text-align: left;
 }
 
 #top input[type="text"] {
-	padding: 10px;
-  width: 70%;
-  border-radius: 5px;
+  padding: 11px;
+  width: 75%;
   font-size: 20px;
+  border: 2px solid #2ec371;
 }
 
 #top input[type="text"]:focus {
@@ -117,8 +129,12 @@ section {
   padding: 15px;
   background-color: #2ec371;
   border: 1px solid #2ec371;
-  border-radius: 5px;
   font-size: 15px;
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fefefe;
 }
 
 #top input[type="submit"]:hover {

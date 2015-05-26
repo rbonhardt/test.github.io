@@ -96,6 +96,31 @@ section {
 	font-weight: 200;
 }
 
+#top fieldset {
+	width: 400px;
+  margin: 20px auto;
+}
+
+#top input[type="text"] {
+	padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#top input[type="text"]:focus {
+	outline: 0;
+  border: 1px solid red;
+}
+
+#top input[type="submit"] {
+  padding: 15px;
+  background-color: #2ec371;
+  border: 1px solid #2ec371;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
 /* Middle Section */
 
 #ryan-image{

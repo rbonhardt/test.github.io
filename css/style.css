@@ -49,6 +49,31 @@ section {
 	padding-bottom: 30px;
 }
 
+/* Navbar */
+#header-title {
+	float: left;
+	padding-top: 15px;
+	margin-bottom: 0px;
+}
+
+#header-nav {
+	float: right;
+}
+
+#header-nav li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#header-nav li a {
+	display: block;
+	padding: 15px;
+}
+
+#header-nav li a:hover {
+	background-color: #fefefe;
+}
+
 /* Top Section Styling */
 
 #top {
@@ -81,7 +106,7 @@ section {
 /* Bottom Section */
 
 #bottom {
-	background-color: #ccc;
+	background-color: #f9f9f9;
 	text-align: center;
 }
 
@@ -104,11 +129,13 @@ section {
 
 .one-half {
   background-color: #fefefe;
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ececec;
   width: 48%;
-  float: left;
+  /*float: left;*/
+  display: inline-block;
   padding: 30px 20px;
   margin: 1%;
+  vertical-align: top;
 }
 
 /* Universal */
@@ -123,15 +150,27 @@ section {
 	color: #fefefe;
 }
 
+.btn {
+  background-color: #428bca;
+  border: 1px solid #357ebd;
+  color: #fefefe;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: #357ebd;
+}
+
 /* clearfix */
 .row:before,
-.row:after {
+.row:after, .clearfix:before, .clearfix:after {
     content: "";
     display: table;
 } 
-.row:after {
+.row:after, .clearfix:after {
     clear: both;
 }
-.row {
+.row, .clearfix {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }

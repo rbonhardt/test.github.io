@@ -41,12 +41,28 @@ header{
 	color: #444;
 }
 
-
+#example {
+	flex: 0 1 426px;
+}
 
 .header-flex a:hover {
 	 background-color: #2ec371;
 	 color: #FFF;
 }
+
+aside {
+	position: fixed;
+	width: 426px;
+	border:1px solid black;
+	bottom: 0;
+	top:50px;
+	overflow: scroll;
+}
+
+article {
+	margin-left: 436px;
+}
+
 
 
 

@@ -10,6 +10,7 @@ body {
 
 a{
 	text-decoration: none;
+	color: #7cc576;
 }
 
 
@@ -33,13 +34,30 @@ header{
 
 .header-flex a {
 	flex-grow: 1;
-	border: 1px solid #111;
+	border-right: 1px solid #D7DADB;
+	border-bottom: 1px solid #D7DADB;
 	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #444;
 }
+
+.header-flex a:last-child {
+	border-right: none;
+}
+
+/*.header-flex a:first-child {
+	background-color: green;
+}
+
+.header-flex a:nth-child(2) {
+	background-color: purple;
+}
+
+.header-flex a:last-child {
+	background-color: red;
+}*/
 
 #example {
 	flex: 0 1 426px;
@@ -53,14 +71,111 @@ header{
 aside {
 	position: fixed;
 	width: 426px;
-	border:1px solid black;
+	border: 1px solid #D7DADB;
 	bottom: 0;
 	top:50px;
 	overflow: scroll;
+	background-color: #f7f7f7;
+}
+
+aside h2 {
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
+  margin-top: 25px;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+
+aside h4 {
+	background: #f2f2f2;
+  padding: 10px 16px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(124, 197, 118, 0.1);
+}
+
+aside a {
+	display: block;
+  padding: 11px 16px;
+  background: #f7f7f7;
+  list-style-type: none;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #425252;
+  text-decoration: none;
+  font-weight: 200;
+  border-bottom: 1px solid rgba(124, 197, 118, 0.1) !important;
 }
 
 article {
 	margin-left: 436px;
+	padding: 15px;
+}
+
+article h1 {
+  margin-bottom: 18px;
+  line-height: 41px;
+  font-weight: bold;
+  font-size: 31px;
+}
+
+article h3 {
+	font-size: 24px;
+	line-height: 33px;
+	color: #2b3636;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+article p {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-bottom: 22px;
+  letter-spacing: 0.1px;
+}
+
+article li {
+	font-size: 17px;
+  font-weight: normal;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#child-example li:nth-child(2n) a{
+	background-color: red;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	aside {
+		width: 276px;
+	}
+
+	article {
+		margin-left: 286px;
+	}
+
+	#example {
+		flex: 0 1 276px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	aside{
+		display: none;
+	}
+
+	article {
+		margin-left: 0;
+	}
+
+	#example {
+		flex: 0 1 56px;
+	}
 }
 
 

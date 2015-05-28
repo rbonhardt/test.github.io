@@ -105,7 +105,9 @@ footer ul {
 
 footer a{
 	flex-grow:1;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 footer a:hover{
 	background-color: rgba(0,0,0,0.2);

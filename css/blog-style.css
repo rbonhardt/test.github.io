@@ -98,8 +98,8 @@ footer{
 
 footer ul {
 	display: flex;
-	align-items: center;
-	text-align: center;
+	/*align-items: center;
+	text-align: center;*/
 	height: 60px;
 }
 

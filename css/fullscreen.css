@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	color: #555;
+  margin-top: 50px;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+header{
+	position: fixed;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #FFF;
+	
+}
+
+.header-flex{
+	display: flex;
+	height: 50px;
+	align-items: center;
+}
+
+
+.header-flex a {
+	flex-grow: 1;
+	border: 1px solid #111;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #444;
+}
+
+
+
+.header-flex a:hover {
+	 background-color: #2ec371;
+	 color: #FFF;
+}
+
+
+
+
+

@@ -1,11 +1,11 @@
 header {
 	font-family: sans-serif;
 	font-weight: 500;
-	box-shadow: 0 0 2px #000;
+	box-shadow: 0 0 2px #cecece;
 }
 
 .container {
-	width: 1020px;
+	max-width: 1020px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -17,7 +17,7 @@ a {
 }
 
 h1 {
-	padding-top: 20px;
+	padding: 20px 0;
 	font-size: 24px;
 	font-weight: 600;
 }
@@ -38,4 +38,18 @@ ul li a {
 ul li a:hover {
 	background-color: #5fcf80;
 	color: #fefefe;
+}
+
+@media (max-width:768px) {
+	.container, ul {
+		flex-direction: column;
+	}
+
+	.container {
+		text-align: center;
+	}
+
+	h1, li {
+		box-shadow: 0 0 2px #cecece;
+	}
 }

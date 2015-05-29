@@ -51,10 +51,12 @@ ul li:last-child a, h1 {
 
 main {
 	background-color: tomato;
+	flex-grow: 1;
 }
 
 aside {
 	background-color: green;
+	flex-grow: .5;
 }
 
 .flex {
@@ -63,14 +65,7 @@ aside {
 
 main, aside {
 	height: 500px;
-}
-
-main {
-	flex-basis: 70%;
-}
-
-aside {
-	flex-basis: 30%;
+	flex-basis: 0;
 }
 
 @media (max-width: 768px) {

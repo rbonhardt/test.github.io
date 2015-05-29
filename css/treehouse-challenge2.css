@@ -22,12 +22,16 @@ h1 {
 	font-weight: 600;
 }
 
-h1, ul li:last-child a {
+h1, ul#first-level li:last-child a {
 	color: #5fcf80;
 }
 
 ul {
 	display: flex;
+}
+
+ul li {
+	position: relative;
 }
 
 ul li a {
@@ -36,6 +40,23 @@ ul li a {
 }
 
 ul li a:hover {
+	background-color: #5fcf80;
+	color: #fefefe;
+}
+
+ul li:hover ul {
+	max-height: 500px;
+}
+
+ul li ul {
+	position: absolute;
+	flex-direction: column;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .5s linear .1s;
+}
+
+ul li ul li a {
 	background-color: #5fcf80;
 	color: #fefefe;
 }

@@ -1,0 +1,40 @@
+header {
+	font-family: sans-serif;
+	font-weight: 500;
+	box-shadow: 0 0 2px #000;
+}
+
+.container {
+	width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	color: #8c989e;
+}
+
+h1 {
+	padding-top: 20px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+h1, ul li:last-child a {
+	color: #5fcf80;
+}
+
+ul {
+	display: flex;
+}
+
+ul li a {
+	padding: 25px 25px;
+	display: block;
+}
+
+ul li a:hover {
+	background-color: #cecece;
+}

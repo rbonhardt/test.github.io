@@ -36,5 +36,6 @@ ul li a {
 }
 
 ul li a:hover {
-	background-color: #cecece;
+	background-color: #5fcf80;
+	color: #fefefe;
 }
